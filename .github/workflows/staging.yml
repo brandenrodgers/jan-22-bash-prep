@@ -1,10 +1,10 @@
 on:
   push:
-    branches:
+    branches-ignore:
       - main
 env:
-  DEFAULT_ACCOUNT_ID: ${{ secrets.HUBSPOT_ACCOUNT_ID }}
-  DEFAULT_PERSONAL_ACCESS_KEY: ${{ secrets.HUBSPOT_PERSONAL_ACCESS_KEY }}
+  DEFAULT_ACCOUNT_ID: ${{ secrets.HUBSPOT_STAGING_ACCOUNT_ID }}
+  DEFAULT_PERSONAL_ACCESS_KEY: ${{ secrets.HUBSPOT_STAGING_PERSONAL_ACCESS_KEY }}
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,4 +14,4 @@ jobs:
       - name: HubSpot Project Action
         uses: HubSpot/hubspot-project-actions@v1.0.1
         with:
-          profile: prod
+          profile: staging
