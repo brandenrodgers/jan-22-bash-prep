@@ -20,6 +20,8 @@ const Extension = ({ context }) => {
         <Text>
           This is a card for the Jan 22 bash prep. Add a layer of UI customization to your app by including app cards that can display data, allow users to perform actions, and more.
           Check out the <Link href={appCardDocsLink}>app card documentation</Link> for more info.
+
+          Some Edit
         </Text>
       </EmptyState>
     </>
