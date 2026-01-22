@@ -1,0 +1,12 @@
+{
+  "uid": "jan_22_bug_bash_prep_card",
+  "type": "card",
+  "config": {
+    "name": "Jan 22 bash prep New Card",
+    "location": "crm.record.tab",
+    "entrypoint": "/app/cards/NewCard.tsx",
+    "objectTypes": [
+      "contacts"
+    ]
+  }
+}
